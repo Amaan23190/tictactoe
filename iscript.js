@@ -1,5 +1,6 @@
 var audioTurn = new Audio("ting.mp3");
 var gameover = new Audio("gameover.mp3");
+var gameMusic = new Audio("music.mp3");
 var turn = "x";
 console.log("Hello");
 
