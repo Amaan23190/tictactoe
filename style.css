@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    margin-right: 12px;
+}
+
+.box{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kalam', cursive;
+    font-size: 5vw;
+}
+
+.box:hover {
+    background-color: rgb(252, 234, 252);
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.gameInfo {
+    padding: 5%;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 4vw;
+}
+
+.reset{
+    background-color: black;
+    color: white;
+    width: 6vw;
+    height: 4vw;
+}
+
+.announceWinner{
+    color: red;
+}
+
+@media only screen and (max-width: 768px){
+    .container {
+        display: block;
+        margin: auto;
+    }
+
+    .gameContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
+        margin: 2%;
+    }
+
+    .division{
+        display: flex;
+        justify-content: center;
+    }
+}
